@@ -5,8 +5,6 @@
 int main(int argc, const char **argv) {
   std::cout << "Hello world" << std::endl;
 
-  MyAwesomeStruct toto;
-
   sf::Window window(sf::VideoMode(800, 600), "My window");
 
   // on fait tourner le programme jusqu'à ce que la fenêtre soit fermée
