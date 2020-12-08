@@ -27,3 +27,8 @@ target_include_directories(whatever
   SYSTEM PUBLIC
   external/SFML/include/
 )
+
+target_include_directories(whatever
+  PUBLIC
+  include/
+)

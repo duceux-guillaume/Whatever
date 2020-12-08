@@ -11,9 +11,10 @@ public:
 
 class ImplSfmlWindow : public IWindow {
 private:
-  sf::Window _window;
+  sf::Window *_window;
 
 public:
+  bool IsOpen() const { return _window->isOpen(); }
 };
 
 #endif // !WHATEVER_HPP
