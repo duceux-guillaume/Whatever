@@ -5,7 +5,7 @@ project (Whatever)
 ##############
 ## EXTERNAL ##
 ##############
-#add_subdirectory(external)
+add_subdirectory(external)
 
 
 ##############
@@ -20,8 +20,10 @@ file(GLOB_RECURSE WHATEVER_FILES
 include_directories(include)
 
 add_executable(whatever ${WHATEVER_FILES})
-#target_link_libraries(whatever sfml-window)
-#target_include_directories(whatever
-#  SYSTEM PUBLIC
-#  external/SFML/include/
-#)
+
+target_link_libraries(whatever sfml-window)
+
+target_include_directories(whatever
+  SYSTEM PUBLIC
+  external/SFML/include/
+)
